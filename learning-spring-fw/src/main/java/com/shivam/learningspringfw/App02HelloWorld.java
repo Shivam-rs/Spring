@@ -1,5 +1,7 @@
 package com.shivam.learningspringfw;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App02HelloWorld {
@@ -22,6 +24,8 @@ public class App02HelloWorld {
 		System.out.println(context.getBean("personParameterCall"));
 
 		System.out.println(context.getBean(Address.class));
+
+		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 	}
 
 }
