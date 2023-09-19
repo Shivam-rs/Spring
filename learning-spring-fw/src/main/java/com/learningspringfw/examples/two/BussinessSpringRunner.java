@@ -13,6 +13,7 @@ public class BussinessSpringRunner {
 		try (var context = new AnnotationConfigApplicationContext(BussinessSpringRunner.class)) {
 
 			System.out.println(context.getBean(BussinessCalculationService.class).findMax());
+			System.out.println("To check GIT");
 		}
 
 	}
