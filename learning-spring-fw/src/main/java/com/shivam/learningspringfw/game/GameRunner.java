@@ -1,10 +1,15 @@
 package com.shivam.learningspringfw.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+
 public class GameRunner {
 
 	private GamingConsole game;
 
-	public GameRunner(GamingConsole game) {
+	public GameRunner(@Qualifier("pacmanGame") GamingConsole game) {
 
 		this.game = game;
 	}
@@ -18,5 +23,4 @@ public class GameRunner {
 		game.left();
 		game.right();
 	}
-
 }
