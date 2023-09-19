@@ -1,4 +1,4 @@
-package com.shivam.learningspringfw;
+package com.learningspringfw.gamelaunch;
 
 //@Configuration
 //public class GamingConfiguration {

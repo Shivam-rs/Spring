@@ -1,4 +1,4 @@
-package com.shivam.learningspringfw.game;
+package com.learningspringfw.games;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

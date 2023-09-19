@@ -1,20 +1,20 @@
-package com.shivam.learningspringfw;
+package com.learningspringfw.gamelaunch;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.shivam.learningspringfw.game.GameRunner;
-import com.shivam.learningspringfw.game.GamingConsole;
+import com.learningspringfw.games.GameRunner;
+import com.learningspringfw.games.GamingConsole;
 
 @Configuration
-@ComponentScan("com.shivam.learningspringfw.game")
+@ComponentScan("com.learningspringfw.games")
 
-public class GameLauncher {
+public class GameLauncherSpring {
 
 	public static void main(String[] args) {
 
-		try (var context = new AnnotationConfigApplicationContext(GameLauncher.class)) {
+		try (var context = new AnnotationConfigApplicationContext(GameLauncherSpring.class)) {
 			context.getBean(GamingConsole.class).up();
 			context.getBean(GameRunner.class).run();
 

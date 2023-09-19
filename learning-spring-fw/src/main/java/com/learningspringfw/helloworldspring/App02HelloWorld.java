@@ -1,4 +1,4 @@
-package com.shivam.HelloWorldSpring.Java;
+package com.learningspringfw.helloworldspring;
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ public class App02HelloWorld {
 		// Launch a Spring context
 		try (var context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class)) {
 
-			// Configure the things that we want Spring to manage - @Configuration classs
+			// Configure the things that we want Spring to manage - @Configuration class
 			System.out.println(context.getBean("name"));
 			System.out.println(context.getBean("age"));
 

@@ -1,4 +1,4 @@
-package com.shivam.learningspringfw.game;
+package com.learningspringfw.games;
 
 public interface GamingConsole {
 	void up();
