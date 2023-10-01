@@ -35,6 +35,8 @@ public class BeanScope {
 			System.out.println(context.getBean(PrototypeClass.class));
 			System.out.println(context.getBean(PrototypeClass.class));
 			System.out.println(context.getBean(PrototypeClass.class));
+			
+			//System.out.println();
 
 		}
 
