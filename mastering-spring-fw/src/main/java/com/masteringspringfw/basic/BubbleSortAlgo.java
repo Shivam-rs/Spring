@@ -1,4 +1,4 @@
-package com.masteringspringfw;
+package com.masteringspringfw.basic;
 
 import org.springframework.stereotype.Component;
 

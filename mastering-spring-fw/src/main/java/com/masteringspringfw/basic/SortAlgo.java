@@ -1,4 +1,4 @@
-package com.masteringspringfw;
+package com.masteringspringfw.basic;
 
 public interface SortAlgo {
 

@@ -1,10 +1,16 @@
-package com.masteringspringfw;
+package com.masteringspringfw.basic;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
 @Component
+//@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class BinarySearchImpl {
 //Sort the array
 //Search the array
@@ -28,4 +34,15 @@ public class BinarySearchImpl {
 		return 3;
 	}
 
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+
+	@PostConstruct
+	public void postConstruct() {
+		logger.info("postConstruct");
+	}
+
+	@PreDestroy // Does not work for prototype
+	public void preDestroy() {
+		logger.info("PreDestroy");
+	}
 }
