@@ -1,4 +1,4 @@
-package com.masteringspringfw.masteringspringfw;
+package com.masteringspringfw;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class MasteringSpringFwApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void test() {
 	}
 
 }
