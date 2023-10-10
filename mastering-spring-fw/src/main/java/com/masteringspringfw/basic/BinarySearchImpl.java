@@ -19,8 +19,7 @@ public class BinarySearchImpl {
 	@Autowired
 	@Qualifier("Quick")
 	private SortAlgo bubbleSortAlgo; // Autowiring by variable name
-	// @primary taken precedence over @Qualifier and for @Qualifier variable name
-	// would take precedence
+	// @primary then @Qualifier and then variable name would take precedence
 
 	/*
 	 * public BinarySearchImpl(SortAlgo sortAlgo) { super(); this.bubbleSortAlgo =
