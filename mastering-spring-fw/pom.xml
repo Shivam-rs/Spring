@@ -59,11 +59,13 @@
 			<scope>test</scope>
 		</dependency>
 
-	<!-- 	<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>  -->
+		</dependency>
+		
+		
 		<dependency>
 			<groupId>com.shivam</groupId>
 			<artifactId>learning-spring-fw</artifactId>
