@@ -12,7 +12,7 @@ public class CourseController {
 	@RequestMapping("/courses") // http://localhost:8080/courses
 	public List<Course> retriveAllCourses() {
 		return Arrays.asList(new Course(1, "Spring", "Ranga"), new Course(2, "Spring Boot", "Ranga"),
-				new Course(3, "Maven", "Ranga"), new Course(4, "AWS", "Ranga"));
+				new Course(3, "Maven 22", "Ranga"), new Course(4, "AWS", "Ranga"));
 	}
 
 }
