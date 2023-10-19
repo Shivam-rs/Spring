@@ -13,12 +13,10 @@ public class MethodExecutionTimeAspect {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@Around("execution(* com.masteringspringfw.springboot.aop.bussiness.*.*(..))")
+	@Around("execution(* com.masteringspringfw.springboot.aop.business.*.*(..))")
 	public void around(ProceedingJoinPoint pJoinPoint) throws Throwable {
 		long startTime = System.currentTimeMillis();
-
 		pJoinPoint.proceed();
-
 		long timeTaken = System.currentTimeMillis() - startTime;
 
 		logger.info("Time taken by {} is {}", pJoinPoint, timeTaken);
