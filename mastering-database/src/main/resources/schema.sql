@@ -1,3 +1,4 @@
+/* When using JPA, it will perform update operation on schema.sql file to create the table. So when using JPA we dont need to write create table query.
 create table person
 (
    id integer not null,
@@ -6,6 +7,8 @@ create table person
    birth_date timestamp,
    primary key(id)
 );
+*/
+
 
 INSERT INTO PERSON 
     (ID, NAME, LOCATION, BIRTH_DATE)

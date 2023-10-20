@@ -7,13 +7,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.masteringdatabase.entity.Person;
 import com.masteringdatabase.jdbc.PersonJdbcDao;
 
-@SpringBootApplication
-public class MasteringDatabaseApplication implements CommandLineRunner {
+//Commenting this annotation so that when running JPA code this does nto get triggered
+//@SpringBootApplication
+public class SpringJdbcApplication implements CommandLineRunner {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -21,7 +21,7 @@ public class MasteringDatabaseApplication implements CommandLineRunner {
 	PersonJdbcDao dao;
 
 	public static void main(String[] args) {
-		SpringApplication.run(MasteringDatabaseApplication.class, args);
+		SpringApplication.run(SpringJdbcApplication.class, args);
 	}
 
 	Date date;

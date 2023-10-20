@@ -47,6 +47,7 @@ public class PersonJdbcDao {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	public List<Person> findByName(String name) {
 
 		return jdbcTemplate.query("select * from person where name =?", new Object[] { name },
