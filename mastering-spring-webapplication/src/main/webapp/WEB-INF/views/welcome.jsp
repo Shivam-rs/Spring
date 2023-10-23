@@ -4,14 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Shivam from JSP</title>
+<title>Welcome Page</title>
 </head>
 <body>
 <form action ="/login.do" method="post">
-<p><font color ="red">${errorMessage}</font></p>
-Name: <input type="text" name="name"/>
-Password: <input type="password" name="password"/>
-<input type="submit" value="Submit"/>
+Welcome ${name}
 </form>
 </body>
 </html>
