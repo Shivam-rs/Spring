@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Welcome Page</title>
+<title>Welcome ${name}</title>
 </head>
 <body>
 <form action ="/login.do" method="post">
-Welcome ${name}
+Welcome ${name}, your password is ${password}
 </form>
 </body>
 </html>
